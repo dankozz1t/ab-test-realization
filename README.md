@@ -1,75 +1,22 @@
-# Nuxt 3 Minimal Starter
+# The second attempt to implement a/b testing taking into account previous errors.
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+- To get to the <b>random design</b> page go to
+  [https://ab-test-realization.netlify.app/?abtest=test](https://ab-test-realization.netlify.app/?abtest=test)
 
-## Setup
+- To get to the <b>1 design</b> page go to
+  [https://ab-test-realization.netlify.app/?abtest=var1](https://ab-test-realization.netlify.app/?abtest=var1)
 
-Make sure to install the dependencies:
+- To get to the <b>2 design</b> page go to
+  [https://ab-test-realization.netlify.app/?abtest=var2](https://ab-test-realization.netlify.app/?abtest=var2)
 
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
+## Setup and Development Server
 
 Start the development server on `http://localhost:3000`:
 
 ```bash
 # npm
+npm install
+
 npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
