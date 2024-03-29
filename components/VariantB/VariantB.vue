@@ -25,7 +25,7 @@ import IFooter from "@/components/UI/IFooter/IFooter.vue";
           href="#Lorem"
           class="bg-white text-custom-300 py-2 px-4 rounded hover:bg-gray-100 transition duration-200"
         >
-          Lorem ipsum dolor
+          Lorem
         </ILink>
       </div>
     </section>
