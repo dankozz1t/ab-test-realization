@@ -1,7 +1,7 @@
 # The second attempt to implement a/b testing taking into account previous errors.
 
 - To get to the <b>random design</b> page go to
-  [https://ab-test-realization.netlify.app/?abtest=test](https://ab-test-realization.netlify.app/?abtest=test)
+  [https://ab-test-realization.netlify.app/](https://ab-test-realization.netlify.app/)
 
 - To get to the <b>1 design</b> page go to
   [https://ab-test-realization.netlify.app/?abtest=var1](https://ab-test-realization.netlify.app/?abtest=var1)
