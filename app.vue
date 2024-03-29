@@ -1,5 +1,12 @@
+<script setup lang="ts">
+import useTestManager from "@/composables/useTestManager";
+
+const PageVariant = useTestManager("page-test1");
+</script>
+
 <template>
-  <div>
-    <NuxtWelcome />
-  </div>
+  <component :is="PageVariant" />
 </template>
+
+<style scoped lang="scss"></style>
+
