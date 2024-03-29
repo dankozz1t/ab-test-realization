@@ -1,12 +1,14 @@
 import {
+  VARIANT,
   pageVariants,
   getPageComponent,
-  type VarianName,
 } from "~/helpers/variantsSetting";
+import useVariant from "@/composables/useVariant";
 
-export default function useTestManager(name: VarianName) {
-  const { variants } = pageVariants[name];
-  const variant = useCookie(`variant-${name}`);
+export default function useTestManager() {
+  const { variants } = pageVariants[VARIANT];
+
+  const { variant, setVariant } = useVariant(VARIANT);
 
   if (!variant.value) {
     const randomVariantIndex = Math.floor(
@@ -14,9 +16,8 @@ export default function useTestManager(name: VarianName) {
     );
     const currentVar = Object.keys(variants)[randomVariantIndex];
 
-    variant.value = String(currentVar);
+    setVariant(String(currentVar));
   }
 
-  console.log(`variant[variant]:`, variants[variant.value]);
   return getPageComponent(variants[variant.value]);
 }

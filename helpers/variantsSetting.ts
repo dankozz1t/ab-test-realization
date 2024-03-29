@@ -1,3 +1,5 @@
+const VARIANT = "variant";
+
 enum VariantNames {
   VariantA = "VariantA",
   VariantB = "VariantB",
@@ -12,7 +14,7 @@ type PageVariants = {
 };
 
 const pageVariants: PageVariants = {
-  "page-test1": {
+  variant: {
     variants: {
       var1: VariantNames.VariantA,
       var2: VariantNames.VariantB,
@@ -22,11 +24,9 @@ const pageVariants: PageVariants = {
 
 type VarianName = keyof typeof pageVariants;
 const getPageComponent = (componentName: VarianName) => {
-  console.log(`componentName:`, componentName);
   return defineAsyncComponent(
     () => import(`~/components/${componentName}/${componentName}.vue`)
   );
 };
 
-export { pageVariants, getPageComponent };
-export type { VarianName };
+export { VARIANT, pageVariants, getPageComponent };
