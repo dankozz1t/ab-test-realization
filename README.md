@@ -11,8 +11,6 @@
 - To see a <b>var2</b> page go to
   [https://ab-test-realization.netlify.app/?abtest=var2](https://ab-test-realization.netlify.app/?abtest=var2)
 
-* When navigating from `var1` to `var2` page, it is better to refresh the page.
-
 ## Setup and Development Server
 
 Start the development server on `http://localhost:3000`:
@@ -23,4 +21,3 @@ npm install
 
 npm run dev
 ```
-
