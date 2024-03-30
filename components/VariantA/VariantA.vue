@@ -9,7 +9,7 @@ import IFooter from "@/components/UI/IFooter/IFooter.vue";
       class="hero py-16 bg-custom-500 text-white flex-1 flex items-center justify-center flex-col"
     >
       <div class="container mx-auto px-4">
-        <div class="flex items-center gap-8 mb-6">
+        <div class="flex flex-wrap items-center gap-8 mb-6">
           <h1 class="text-5xl font-bold">Lorem, ipsum dolor sit!</h1>
           <code class="text-2xl bg-custom-800 px-3 py-1 rounded-lg">
             var1
