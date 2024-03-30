@@ -5,10 +5,10 @@
 
 #### If you want to see the right design directly
 
-- To get to the <b>1 design</b> page go to
+- To see a <b>var1</b> page go to
   [https://ab-test-realization.netlify.app/?abtest=var1](https://ab-test-realization.netlify.app/?abtest=var1)
 
-- To get to the <b>2 design</b> page go to
+- To see a <b>var2</b> page go to
   [https://ab-test-realization.netlify.app/?abtest=var2](https://ab-test-realization.netlify.app/?abtest=var2)
 
 * When navigating from `var1` to `var2` page, it is better to refresh the page.
