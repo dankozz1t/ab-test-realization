@@ -1,15 +1,21 @@
 <script setup lang="ts">
+import { shallowRef, onMounted } from "vue";
 import useTestManager from "@/composables/useTestManager";
 
 definePageMeta({
   middleware: ["url-checker"],
 });
 
-const PageVariant = useTestManager();
+const customComponent = shallowRef(null);
+
+onMounted(() => {
+  const component = useTestManager();
+  customComponent.value = component;
+});
 </script>
 
 <template>
-  <component :is="PageVariant" :key="PageVariant" />
+  <component :is="customComponent" />
 </template>
 
 <style scoped lang="scss"></style>

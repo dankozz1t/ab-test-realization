@@ -19,5 +19,5 @@ export default function useTestManager() {
     setVariant(String(currentVar));
   }
 
-  return getPageComponent(variants[variant.value]);
+  return getPageComponent(variants[String(variant.value)]);
 }

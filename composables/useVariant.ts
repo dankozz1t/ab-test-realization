@@ -1,4 +1,4 @@
-export default function useVariant(VARIANT) {
+export default function useVariant(VARIANT: string) {
   const variant = useCookie(VARIANT);
 
   const setVariant = (variantName: string) => {
